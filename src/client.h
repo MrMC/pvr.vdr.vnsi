@@ -20,10 +20,10 @@
  *
  */
 
-#include "kodi/libXBMC_addon.h"
-#include "kodi/libXBMC_codec.h"
-#include "kodi/libXBMC_pvr.h"
-#include "kodi/libKODI_guilib.h"
+#include "mrmc/libXBMC_addon.h"
+#include "mrmc/libXBMC_codec.h"
+#include "mrmc/libXBMC_pvr.h"
+#include "mrmc/libKODI_guilib.h"
 
 #define DEFAULT_HOST          "127.0.0.1"
 #define DEFAULT_PORT          34890

@@ -6,8 +6,8 @@ set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} ${PROJECT_SOURCE_DIR})
 
 enable_language(CXX)
 
-find_package(kodi REQUIRED)
-find_package(kodiplatform REQUIRED)
+find_package(mrmc REQUIRED)
+find_package(mrmcplatform REQUIRED)
 find_package(platform REQUIRED)
 
 add_definitions(-DUSE_DEMUX)
@@ -67,9 +67,9 @@ if(WIN32)
 endif()
 
 include_directories(${INCLUDES}
-                    ${kodiplatform_INCLUDE_DIRS}
+                    ${mrmcplatform_INCLUDE_DIRS}
                     ${platform_INCLUDE_DIRS}
-                    ${KODI_INCLUDE_DIR})
+                    ${MRMC_INCLUDE_DIR})
 
 build_addon(pvr.vdr.vnsi VDR DEPLIBS)
 
