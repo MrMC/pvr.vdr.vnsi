@@ -96,7 +96,7 @@ bool cVNSIChannelScan::Open(const std::string& hostname, int port, const char* n
     return false;
 
   /* Load the Window as Dialog */
-  m_window = GUI->Window_create("ChannelScan.xml", "Confluence", false, true);
+  m_window = GUI->Window_create("ChannelScan.xml", "MrMC", false, true);
   m_window->m_cbhdl   = this;
   m_window->CBOnInit  = OnInitCB;
   m_window->CBOnFocus = OnFocusCB;
